@@ -1,6 +1,6 @@
 # fargate CLI demo
 
-Pre-Requisites
+## Pre-Requisites
 
 1. Clone this repo to your machine. 
 2. Install the AWS CLI v1.
@@ -17,12 +17,13 @@ https://www.youtube.com/watch?v=P6iY6ovhbfc
 
 Own your own domain or hosted zone on Route53.
 
-In these example commands below my domain is **andy.work** - you will need to change this to your own top level domain/zone.
+In the example commands below my domain is **andy.work** - you will need to change this to your own top level domain/zone.
 
 One time setup - create an AWS certificate in ACM using the fargate cli:
 
 ### :star: Tips
-:bulb: Be sure to work out of a region that fargate is supported from (eg. eu-west-1) - and always specify the --region option when using the fargate cli 
+:bulb: Be sure to work out of a region that fargate is supported from (eg. eu-west-1)
+Always specify the **--region** option when using the fargate cli 
 
 ```console
 $ fargate certificate request fgdemo1.andyt.work --region eu-west-1
