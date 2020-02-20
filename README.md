@@ -75,7 +75,7 @@ fgdemo1.andyt.work	Success	CNAME _00ab335d213368e2d6d1f8749dfd5d37.fgdemo1.andyt
 Get the fargate cli to create a load balancer for your service using your certificate:
 
 ```console
-fargate lb create fgdemo1 --port 443 --certificate fgdemo1.andyt.work --region eu-west-1
+$ fargate lb create fgdemo1 --port 443 --certificate fgdemo1.andyt.work --region eu-west-1
 ```
 ```
  ℹ️  Created load balancer fgdemo1
@@ -282,9 +282,9 @@ Again after about a minute only 2 colours :-(
 To destroy and cleanup use these commands:
 
 ```console
-fargate service scale fgdemo1 0 --region eu-west-1
-fargate service destroy fgdemo1 --region eu-west-1
-fargate lb destroy fgdemo1 --region eu-west-1
+$ fargate service scale fgdemo1 0 --region eu-west-1
+$ fargate service destroy fgdemo1 --region eu-west-1
+$ fargate lb destroy fgdemo1 --region eu-west-1
 ```
 
 
@@ -295,7 +295,7 @@ fargate lb destroy fgdemo1 --region eu-west-1
 To fix the Certificate error page you can add a step having created the fargate service:
 
 ```console
-fargate lb alias fgdemo1 fgdemo1.andyt.work --region eu-west-1
+$ fargate lb alias fgdemo1 fgdemo1.andyt.work --region eu-west-1
 ```
 
 After the DNS records propegate you ca]
