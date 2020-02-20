@@ -1,4 +1,4 @@
-# Fargate CLI demo
+# AWS Fargate CLI demo
 
 ## Pre-requisite steps
 
