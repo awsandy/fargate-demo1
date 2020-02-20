@@ -50,7 +50,7 @@ $ fargate certificate validate fgdemo1.andyt.work --region eu-west-1
  ℹ️  [fgdemo1.andyt.work] created validation record
 ```
 
-Wait about 2-3 minutes and then check the status of your new certificate - it should say Success under STATUS
+:clock2: Wait about 2-3 minutes and then check the status of your new certificate - it should say Success under STATUS
 
 ```console
 $ fargate certificate info fgdemo1.andyt.work --region eu-west-1
@@ -227,7 +227,7 @@ Events
 
 ```
 
-Wait until it says "Running: 3"
+:clock2: Wait until it says "Running: 3"
 
 Note the dns name of the loadbalancer:
 
@@ -238,7 +238,7 @@ $ fargate  service info fgdemo1 --region eu-west-1 | grep DNS
   DNS Name: fgdemo1-80058182.eu-west-1.elb.amazonaws.com
 ```
 
-Wait another 60 seconds for the load balancer health checks to clear
+:clock2: Wait another 60 seconds for the load balancer health checks to clear
 
 Now you can hit the URL:
 
@@ -269,13 +269,13 @@ The script "setup.sh" is responsible for this
 $ fargate service scale fgdemo1 6 --region eu-west-1
 ```
 
-After a 1-2 minutes you should see 6 different colours when you refresh the bowser :grin:
+:clock2: After a 1-2 minutes you should see 6 different colours when you refresh the bowser :grin:
 
 ``` console
 $ fargate service scale fgdemo1 2 --region eu-west-1
 ```
 
-Again after about a minute only 2 colours :disappointed:
+:clock2: Again after about a minute only 2 colours :disappointed:
 
 
 
