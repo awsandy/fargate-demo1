@@ -1,6 +1,6 @@
-# fargate CLI demo
+# Fargate CLI demo
 
-## Pre-Requisite
+## Pre-requisite steps
 
 1. Clone this repo to your machine. 
 2. Install the AWS CLI v1.
