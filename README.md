@@ -245,7 +245,7 @@ https://fgdemo1-80058182.eu-west-1.elb.amazonaws.com
 
 You'll need to accept the security exception for the certificate.
 
-!(images/chrome1.png)
+![](images/chrome1.png)
 
 Then you can see the sample web page:
 
