@@ -249,14 +249,31 @@ You'll need to accept the security exception for the certificate.
 
 Then you can see the sample web page:
 
-!(images/chrome2.png)
+![](images/chrome2.png)
 
 Every time you hit refresh you should see different coloured page
 The background colour is ert from the last 6 hexidecimal digital of the fargate Task ID:
 
-!(images/chrome3.png)
+![](images/chrome3.png)
 
 The script "setup.sh" is responsible for this
+
+
+## Scale it up and down
+
+``` console
+$ fargate service scale fgdemo1 6 --region eu-west-1
+```
+
+After a 1-2 minutes you shoudl see 6 different colours when you refresh the bowser :-)
+
+``` console
+$ fargate service scale fgdemo1 2 --region eu-west-1
+```
+
+Again after about a minute only 2 colours :-(
+
+
 
 # Cleanup
 
