@@ -1,4 +1,4 @@
-### fargate CLI demo
+# fargate CLI demo
 
 Pre-Requisites
 
@@ -13,11 +13,11 @@ Also recommended - Watch the demo movie on this page:
 https://www.youtube.com/watch?v=P6iY6ovhbfc
 
 
-4. Other pre-requesitite steps
+## Other pre-requesitite steps
 
 Own your own domain or hosted zone on Route53.
 
-In these example commands below mine is **andy.work** - your need to change this to your own top level domain/zone.
+In these example commands below my domain is **andy.work** - you will need to change this to your own top level domain/zone.
 
 One time setup - create an AWS certificate in ACM using the fargate cli:
 
