@@ -286,9 +286,7 @@ fargate lb destroy fgdemo1 --region eu-west-1
 ```
 
 
-
 ## Appendix
-
 
 To fix the Certificate error page you can add a step having created the fargate service:
 
