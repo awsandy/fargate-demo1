@@ -247,7 +247,7 @@ You'll need to accept the security exception for the certificate.
 
 ![](images/chrome1.png)
 
-See the [Appendix](#appendix) for how to setup an DNS Alias to fix this error.
+*See the [Appendix](#appendix) for how to setup an DNS Alias to fix this error.*
 
 Then you can see the sample web page:
 
