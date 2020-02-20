@@ -41,24 +41,37 @@ If not, you must manually create the DNS records returned by running:
 
 ```
 
+As it says validate the certificate:
 
 ```console
 $ fargate certificate validate fgdemo1.andyt.work --region eu-west-1
 ```
+```
+ ℹ️  [fgdemo1.andyt.work] created validation record
+```
 
-Wait about 2-3 minutes and check the status of your new certificate
+Wait about 2-3 minutes and then check the status of your new certificate - it should say Success under STATUS
 
 ```console
 $ fargate certificate info fgdemo1.andyt.work --region eu-west-1
 ```
+```
+Domain Name: fgdemo1.andyt.work
+Status: Pending Validation
+Type: Amazon Issued
+Subject Alternative Names: fgdemo1.andyt.work
+
+Validations
+
+DOMAIN NAME		STATUS	RECORD
+fgdemo1.andyt.work	Success	CNAME _00ab335d213368e2d6d1f8749dfd5d37.fgdemo1.andyt.work. -> _774cfa7682a2d0e04b805aed06becf43.vhzmpjdqfx.acm-validations.aws.
+```
 
 
+### :star: With this all done your ready for the main demo:
 
 
-With this all done your ready for the main demo:
-
-
-## Main fargate cli Demo
+# Main fargate cli Demo
 
 Get the fargate cli to create a load balancer for your service using your certificate:
 
