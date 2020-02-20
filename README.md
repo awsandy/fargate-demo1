@@ -289,7 +289,6 @@ $ fargate lb destroy fgdemo1 --region eu-west-1
 
 
 ## Appendix
-
 # <a name="appendix"></a> 
 
 To fix the Certificate error page you can add a step having created the fargate service:
@@ -298,7 +297,6 @@ To fix the Certificate error page you can add a step having created the fargate 
 $ fargate lb alias fgdemo1 fgdemo1.andyt.work --region eu-west-1
 ```
 
-After the DNS records propegate you ca]
-n hit https://fgdemo1.andyt.work  without any security alerts in the browser as the certificate will then match the service name.
+After the DNS records propegate you can visit https://fgdemo1.andyt.work  without any security alerts in the browser as the certificate will then match the service name.
 
 
