@@ -225,21 +225,38 @@ Events
 
 ```
 
-Wait until it says status "Running: 3"
+Wait until it says "Running: 3"
 
 Note the dns name of the loadbalancer:
 
 ```
 $ fargate  service info fgdemo1 --region eu-west-1 | grep DNS
 ```
+```
+  DNS Name: fgdemo1-80058182.eu-west-1.elb.amazonaws.com
+```
 
 Wait another 60 seconds for the load balancer health checks to clear
 
 Now you can hit the URL:
 
-https://your.load.balancer.url
+https://fgdemo1-80058182.eu-west-1.elb.amazonaws.com
+
 
 You'll need to accept the security exception for the certificate.
+
+
+(images/chrome1.png)
+
+Then you can see the sample web page:
+(images/chrome2.png)
+
+Every time you hit refresh you should see different coloured page
+The background colour is ert from the last 6 hexidecimal digital of the fargate Task ID
+(images/chrome3.png)
+
+
+
 
 To fix that longer term do:
 
