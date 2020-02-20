@@ -245,15 +245,30 @@ https://fgdemo1-80058182.eu-west-1.elb.amazonaws.com
 
 You'll need to accept the security exception for the certificate.
 
-
-(images/chrome1.png)
+!(images/chrome1.png)
 
 Then you can see the sample web page:
-(images/chrome2.png)
+
+!(images/chrome2.png)
 
 Every time you hit refresh you should see different coloured page
-The background colour is ert from the last 6 hexidecimal digital of the fargate Task ID
-(images/chrome3.png)
+The background colour is ert from the last 6 hexidecimal digital of the fargate Task ID:
+
+!(images/chrome3.png)
+
+The script "setup.sh" is responsible for this
+
+# Cleanup
+
+To destroy and cleanup use these commands:
+
+```console
+fargate service scale fgdemo1 0 --region eu-west-1
+fargate service destroy fgdemo1 --region eu-west-1
+fargate lb destroy fgdemo1 --region eu-west-1
+```
+
+
 
 
 
