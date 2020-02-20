@@ -269,7 +269,7 @@ The script "setup.sh" is responsible for this
 $ fargate service scale fgdemo1 6 --region eu-west-1
 ```
 
-After a 1-2 minutes you should see 6 different colours when you refresh the bowser :-)
+After a 1-2 minutes you should see 6 different colours when you refresh the bowser :grin:
 
 ``` console
 $ fargate service scale fgdemo1 2 --region eu-west-1
