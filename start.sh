@@ -36,8 +36,7 @@ echo "</html>"  >> middle.html
 
 cat middle.html > index.html
 nginx && tail -f /dev/null
-#while true ; do  echo -e "HTTP/1.1 200 OK\n\n $(cat /opt/www/index.html)" | nc -l -p 15050  ; done 
 
-## wait command waits for any background jobs - so docker stuff hangs around
+
+## wait command waits for any background jobs so docker stuff hangs around or do the tail /dev/null trick
 #wait
-#/bin/bash
