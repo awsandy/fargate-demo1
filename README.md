@@ -1,6 +1,6 @@
 # fargate CLI demo
 
-## Pre-Requisites
+## Pre-Requisite
 
 1. Clone this repo to your machine. 
 2. Install the AWS CLI v1.
@@ -13,13 +13,13 @@ Also recommended - Watch the demo movie on this page:
 https://www.youtube.com/watch?v=P6iY6ovhbfc
 
 
-## Other pre-requesitite steps
+## Other pre-requistite steps
 
-Own your own domain or hosted zone on Route53.
+5. Own your own domain or hosted zone on Route53.
 
 In the example commands below my domain is **andy.work** - you will need to change this to your own top level domain/zone.
 
-One time setup - create an AWS certificate in ACM using the fargate cli:
+6. One time setup - create an AWS certificate in ACM using the fargate cli:
 
 ### :star: Tips
 :bulb: Be sure to work out of a region that fargate is supported from (eg. eu-west-1)
@@ -37,6 +37,9 @@ $ fargate certificate info fgdemo1.andyt.work --region eu-west-1
 ```
 
 With this all done your ready for the main demo:
+
+
+## Main fargate Demo
 
 Get the fargate cli to create a load balancer for your service using your certificate:
 
