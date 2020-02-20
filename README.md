@@ -275,7 +275,7 @@ After a 1-2 minutes you should see 6 different colours when you refresh the bows
 $ fargate service scale fgdemo1 2 --region eu-west-1
 ```
 
-Again after about a minute only 2 colours :-(
+Again after about a minute only 2 colours :disappointed:
 
 
 
