@@ -81,10 +81,12 @@ $ fargate lb create fgdemo1 --port 443 --certificate fgdemo1.andyt.work --region
  ℹ️  Created load balancer fgdemo1
  ```
 
-This next command does a few things 
-performs a local docker build using the Dockerfile you cloned, creates a new ECR registry, 
-tags and pushes the local docker image into the registry, 
-Starts new fargate task/tasks behind the load balancer 
+This next command does a few things: 
+
+* Performs a local docker build using the Dockerfile you cloned. 
+* Creates a new ECR registry. 
+* Tags and pushes the local docker image into the registry. 
+* Starts new fargate task/tasks behind the load balancer .
 
 ```console
 $ fargate service create fgdemo1 --port HTTP:80 --lb fgdemo1 --num 3 --region eu-west-1
