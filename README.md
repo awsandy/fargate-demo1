@@ -9,17 +9,17 @@
 
 https://github.com/awslabs/fargatecli/releases
 
-Also recommended - Watch the demo movie on this page:
+Also recommended - Watch the demo movie:
 https://www.youtube.com/watch?v=P6iY6ovhbfc
 
 
 ## Other pre-requistite steps
 
-5. Own your own domain or hosted zone on Route53.
+5. Own your own domain or hosted zone on Amazon Route53.
 
-In the example commands below my domain is **andy.work** - you will need to change this to your own top level domain/zone.
+In the example commands below my domain is **andyt.work** - you will need to change this to your own top level domain/zone.
 
-6. One time setup - create an AWS certificate in ACM using the fargate cli:
+6. One time setup - create a certificate in AWS Certificate Manager using the fargate cli:
 
 ### :star: Tips
 :bulb: Be sure to work out of a region that fargate is supported from (eg. eu-west-1)
