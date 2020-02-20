@@ -252,7 +252,7 @@ Then you can see the sample web page:
 ![](images/chrome2.png)
 
 Every time you hit refresh you should see different coloured page
-The background colour is ert from the last 6 hexidecimal digital of the fargate Task ID:
+The background colour is set from the last 6 hexidecimal digits of the fargate Task ID:
 
 ![](images/chrome3.png)
 
@@ -265,7 +265,7 @@ The script "setup.sh" is responsible for this
 $ fargate service scale fgdemo1 6 --region eu-west-1
 ```
 
-After a 1-2 minutes you shoudl see 6 different colours when you refresh the bowser :-)
+After a 1-2 minutes you should see 6 different colours when you refresh the bowser :-)
 
 ``` console
 $ fargate service scale fgdemo1 2 --region eu-west-1
@@ -287,15 +287,15 @@ fargate lb destroy fgdemo1 --region eu-west-1
 
 
 
+## Appendix
 
 
-
-To fix that longer term do:
+To fix the Certificate error page you can add a step having created the fargate service:
 
 ```console
 fargate lb alias fgdemo1 fgdemo1.andyt.work --region eu-west-1
 ```
 
-After the DNS records propegate you cn hit https://fgdemo1.andyt.work  without any security alerts in the browser as the cert will match the service name.
+After the DNS records propegate you cn hit https://fgdemo1.andyt.work  without any security alerts in the browser as the certificate will then match the service name.
 
 
