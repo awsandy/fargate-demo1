@@ -27,6 +27,22 @@ Always specify the **--region** option when using the fargate cli
 
 ```console
 $ fargate certificate request fgdemo1.andyt.work --region eu-west-1
+```
+```
+ ℹ️  Requested certificate for fgdemo1.andyt.work
+
+You must validate ownership of the domain name for the certificate to be issued.
+
+If your domain is hosted using Amazon Route 53, this can be done automatically by running:
+    fargate certificate validate fgdemo1.andyt.work
+
+If not, you must manually create the DNS records returned by running:
+    fargate certificate info fgdemo1.andyt.work
+
+```
+
+
+```console
 $ fargate certificate validate fgdemo1.andyt.work --region eu-west-1
 ```
 
@@ -36,10 +52,13 @@ Wait about 2-3 minutes and check the status of your new certificate
 $ fargate certificate info fgdemo1.andyt.work --region eu-west-1
 ```
 
+
+
+
 With this all done your ready for the main demo:
 
 
-## Main fargate Demo
+## Main fargate cli Demo
 
 Get the fargate cli to create a load balancer for your service using your certificate:
 
